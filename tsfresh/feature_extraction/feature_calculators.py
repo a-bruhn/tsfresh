@@ -27,7 +27,7 @@ try:
     import matrixprofile as mp
     from matrixprofile.exceptions import NoSolutionPossible
 except ImportError:
-    warning.warn("For calculating matrixprofiles extra 'matrixprofile' needs to be installed.")
+    warnings.warn("For calculating matrixprofiles extra 'matrixprofile' needs to be installed.")
 
 import numpy as np
 import pandas as pd
