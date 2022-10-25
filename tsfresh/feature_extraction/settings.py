@@ -239,10 +239,10 @@ class ComprehensiveFCParameters(PickableSettings):
                     {"tau": 1, "dimension": x} for x in [3, 4, 5, 6, 7]
                 ],
                 "query_similarity_count": [{"query": None, "threshold": 0.0}],
-                "matrix_profile": [
-                    {"threshold": 0.98, "feature": f}
-                    for f in ["min", "max", "mean", "median", "25", "75"]
-                ],
+                # "matrix_profile": [
+                #     {"threshold": 0.98, "feature": f}
+                #     for f in ["min", "max", "mean", "median", "25", "75"]
+                # ],
                 "mean_n_absolute_max": [
                     {
                         "number_of_maxima": 3,
