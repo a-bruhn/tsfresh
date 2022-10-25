@@ -23,11 +23,16 @@ import warnings
 from builtins import range
 from collections import defaultdict
 
-import matrixprofile as mp
+try:
+    import matrixprofile as mp
+    from matrixprofile.exceptions import NoSolutionPossible
+except ImportError:
+    warning.warn("For calculating matrixprofiles extra 'matrixprofile' needs to be installed.")
+
 import numpy as np
 import pandas as pd
 import stumpy
-from matrixprofile.exceptions import NoSolutionPossible
+
 from numpy.linalg import LinAlgError
 from scipy.signal import cwt, find_peaks_cwt, ricker, welch
 from scipy.stats import linregress
